@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float forwardInput = forwardInput.GetAxis("Vertical");
+        float forwardInput = Input.GetAxis("Vertical");
         playerRb.AddForce(Vector3.forward * speed * forwardInput);
     }
 }

@@ -33,7 +33,7 @@ public class SpawnManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        enemyCount = FindObjectsByType<Enemy>().Length;
+        enemyCount = FindObjectsOfType<Enemy>().Length;
         if(enemyCount == 0)
         {
             waveNumber++;
